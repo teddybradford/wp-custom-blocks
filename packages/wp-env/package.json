@@ -1,0 +1,11 @@
+{
+  "name": "@namespace/wp-env",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "wp-env start"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^4.3.1"
+  }
+}
