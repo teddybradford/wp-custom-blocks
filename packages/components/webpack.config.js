@@ -2,18 +2,14 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: { index: './src/index' },
   output: {
     path: path.resolve(__dirname, 'lib'),
     clean: true,
-    library: {
-      type: 'umd',
-      name: 'MyLibrary',
-    },
+    library: { type: 'umd' },
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js'],
   },
   externals: {
     react: 'React',
