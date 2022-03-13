@@ -1,4 +1,4 @@
 {
   "core": null,
-  "plugins": ["../wp-custom-blocks"]
+  "plugins": ["../wp-plugin-custom-blocks"]
 }
