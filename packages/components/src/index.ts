@@ -1,2 +1,4 @@
-export { Test } from './test';
-export { Test2 } from './test2';
+import './index.css';
+
+export { Cool } from './cool';
+export { Cute } from './cute';

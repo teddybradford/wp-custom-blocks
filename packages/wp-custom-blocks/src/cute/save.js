@@ -1,5 +1,6 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
+import { Cute } from 'components';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -11,5 +12,10 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export const Save = () => {
-  return <p {...useBlockProps.save()}>{__('Test – hello from the saved content!', 'test')}</p>;
+  return (
+    <div {...useBlockProps.save()}>
+      <Cute>Hello, World!</Cute>
+      <p>{__('Test – hello from the saved content!', 'cute')}</p>
+    </div>
+  );
 };

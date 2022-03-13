@@ -8,7 +8,7 @@ import './style.scss';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType('namespace/test2', {
+registerBlockType('custom-blocks/cute', {
   edit: Edit,
   save: Save,
 });

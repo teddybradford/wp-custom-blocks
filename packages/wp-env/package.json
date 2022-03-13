@@ -1,5 +1,5 @@
 {
-  "name": "@namespace/wp-env",
+  "name": "wp-env",
   "version": "0.1.0",
   "private": true,
   "scripts": {

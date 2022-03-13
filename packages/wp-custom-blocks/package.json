@@ -1,5 +1,5 @@
 {
-  "name": "@namespace/wp-custom-blocks",
+  "name": "wp-custom-blocks",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,9 +12,10 @@
     "start": "wp-scripts start"
   },
   "dependencies": {
-    "@namespace/components": "workspace:*"
+    "components": "workspace:*"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^22.2.1"
+    "@wordpress/scripts": "^22.2.1",
+    "copy-webpack-plugin": "^10.2.4"
   }
 }
