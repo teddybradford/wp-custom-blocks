@@ -5,8 +5,7 @@
     "jsx": "react-jsx",
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./lib",
-    "declarationDir": "./types"
+    "outDir": "./lib"
   },
   "include": ["./src"]
 }

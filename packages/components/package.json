@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "main": "lib/index.js",
-  "types": "types/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
-    "lib",
-    "types"
+    "lib"
   ],
   "scripts": {
     "start": "webpack --mode=development --watch",
