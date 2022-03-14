@@ -41,22 +41,47 @@ importers:
       webpack: 5.70.0_webpack-cli@4.9.2
       webpack-cli: 4.9.2_webpack@5.70.0
 
-  packages/wp-custom-blocks:
+  packages/render-components:
     specifiers:
-      '@wordpress/scripts': ^22.2.1
+      '@types/react': ^17.0.40
+      '@types/react-dom': ^17.0.13
       components: workspace:*
-      copy-webpack-plugin: ^10.2.4
+      react: ^17.0.2
+      react-dom: ^17.0.2
+      ts-loader: ^9.2.8
+      typescript: ^4.6.2
+      webpack: ^5.70.0
+      webpack-cli: ^4.9.2
     dependencies:
       components: link:../components
     devDependencies:
-      '@wordpress/scripts': 22.2.1
-      copy-webpack-plugin: 10.2.4
+      '@types/react': 17.0.40
+      '@types/react-dom': 17.0.13
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      ts-loader: 9.2.8_typescript@4.6.2+webpack@5.70.0
+      typescript: 4.6.2
+      webpack: 5.70.0_webpack-cli@4.9.2
+      webpack-cli: 4.9.2_webpack@5.70.0
 
   packages/wp-env:
     specifiers:
       '@wordpress/env': ^4.3.1
     devDependencies:
       '@wordpress/env': 4.3.1
+
+  packages/wp-plugin-custom-blocks:
+    specifiers:
+      '@wordpress/scripts': ^22.2.1
+      components: workspace:*
+      copy-webpack-plugin: ^10.2.4
+      render-components: workspace:*
+    dependencies:
+      components: link:../components
+      render-components: link:../render-components
+    devDependencies:
+      '@wordpress/scripts': 22.2.1
+      copy-webpack-plugin: 10.2.4
 
 packages:
 

@@ -1,4 +1,3 @@
-import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 import { Cool } from 'components';
 import './editor.scss';
@@ -14,8 +13,7 @@ import './editor.scss';
 export const Edit = () => {
   return (
     <div {...useBlockProps()}>
-      <Cool>Hello, World!</Cool>
-      <p>{__('Test – hello from the editor!', 'cool')}</p>
+      <Cool />
     </div>
   );
 };

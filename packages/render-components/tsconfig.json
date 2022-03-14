@@ -1,12 +1,10 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2016",
     "jsx": "react-jsx",
     "module": "commonjs",
-    "declaration": true,
-    "outDir": "./lib",
-    "declarationDir": "./types"
+    "outDir": "./dist"
   },
   "include": ["./src"]
 }

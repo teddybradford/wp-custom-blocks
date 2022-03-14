@@ -1,6 +1,5 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { Edit } from './edit';
-import { Save } from './save';
 import './style.scss';
 
 /**
@@ -8,7 +7,6 @@ import './style.scss';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType('custom-blocks/cute', {
+registerBlockType('custom/dynamic', {
   edit: Edit,
-  save: Save,
 });

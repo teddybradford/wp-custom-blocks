@@ -8,7 +8,7 @@ import './style.scss';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType('custom-blocks/cool', {
+registerBlockType('custom/static', {
   edit: Edit,
   save: Save,
 });

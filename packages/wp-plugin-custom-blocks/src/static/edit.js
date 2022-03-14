@@ -15,7 +15,7 @@ export const Edit = () => {
   return (
     <div {...useBlockProps()}>
       <Cute>Hello, World!</Cute>
-      <p>{__('Test – hello from the editor!', 'cute')}</p>
+      <p>{__('Test – hello from the editor!', 'static')}</p>
     </div>
   );
 };
