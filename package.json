@@ -1,9 +1,17 @@
 {
   "name": "root",
-  "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/components",
+    "packages/render-components",
+    "packages/wp-env",
+    "packages/wp-plugin-custom-blocks"
+  ],
   "scripts": {
-    "start": "pnpm --parallel start",
-    "build": "pnpm --recursive build"
+    "start": "concurrently -n components,render-components,wp-env,wp-plugin-custom-blocks \"npm:start -w components\" \"npm:start -w render-components\" \"npm:start -w wp-env\" \"npm:start -w wp-plugin-custom-blocks\"",
+    "build": "npm run build -ws --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
   }
 }

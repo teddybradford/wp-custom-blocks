@@ -11,7 +11,7 @@
     "build": "webpack --mode=production"
   },
   "dependencies": {
-    "components": "workspace:*"
+    "components": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",

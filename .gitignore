@@ -5,6 +5,7 @@
 node_modules
 
 package-lock.json
+!/package-lock.json
 npm-debug.log*
 
 yarn.lock
@@ -12,5 +13,4 @@ yarn-debug.log*
 yarn-error.log*
 
 pnpm-lock.yaml
-!/pnpm-lock.yaml
 .pnpm-debug.log*
