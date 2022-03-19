@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "wp-env start"
+    "start": "wp-env start",
+    "stop": "wp-env stop"
   },
   "devDependencies": {
     "@wordpress/env": "^4.3.1"
