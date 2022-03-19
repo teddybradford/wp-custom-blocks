@@ -13,10 +13,10 @@
  * @package           custom-blocks
  */
 
-include("includes/register-block-dynamic.php");
-include("includes/register-block-static.php");
+include_once 'includes/register-block-dynamic.php';
+include_once 'includes/register-block-static.php';
 
-include("includes/enqueue-block-assets.php");
+include_once 'includes/enqueue-block-assets.php';
 
 function allowed_block_types( $allowed_block_types, $block_editor_context ) {
   return array(
