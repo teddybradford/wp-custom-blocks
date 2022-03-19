@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "incremental": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
